@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Tarefas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Gerenciador de Tarefas</h1>
+  </header>
+
+  <main>
+    <section aria-label="Formulário de criação de tarefas">
+      <form id="task-form">
+        <div class="form-group">
+          <label for="task-input">Tarefa:</label>
+          <input type="text" id="task-input" placeholder="Ex: Estudar JavaScript" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tag-input">Etiqueta:</label>
+          <input type="text" id="tag-input" placeholder="Ex: Estudo">
+        </div>
+
+        <div class="form-group">
+          <label for="date-input">Data:</label>
+          <input type="date" id="date-input">
+        </div>
+
+        <button type="submit" id="add-task">Adicionar</button>
+      </form>
+    </section>
+
+    <section aria-label="Lista de tarefas">
+      <ul id="task-list" class="task-list" aria-live="polite"></ul>
+    </section>
+
+    <footer>
+      <p id="task-counter">Nenhuma tarefa concluída</p>
+    </footer>
+  </main>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
